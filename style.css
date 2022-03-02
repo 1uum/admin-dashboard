@@ -7,24 +7,155 @@ html{
 body{
     margin: 0;
     margin-bottom: 50px;
+    background-color: #F0FDF4;
 }
 
 .container{
     display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
 }
 
-.header{
-    background-color: red;
+.top-header i{
+    color: #3a3a3a;
 }
+i:hover{
+    cursor: pointer;
+}
+
+input{
+    background-color: #F0FDF4;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    width: 650px;
+    padding: 3px 0px 3px 0px;
+    outline: none;
+}
+
+input:focus{
+    border-color: #3a3a3a;
+}
+
+/*--------------Header--------------*/
+.header{
+    background-color: #DCFCE7;
+    display: grid;
+    grid-area: 1/2/2/6;
+    padding-top: 5px;
+}
+
+.top-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 50px;
+}
+
+.user-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-right: 50px;
+    margin-left: 15px;
+}
+
+.user-menu p, .bot-header p{
+    font-weight: 700;
+    color: #3a3a3a;
+}
+
+.bot-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-intro{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+}
+
+#user-photo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#user-photo2{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+}
+
+.user-intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.greet-user{
+    display: flex;
+    flex-direction: column;
+    gap: -15px;
+}
+
+#greet{
+    font-size: 15px;
+    margin-bottom: -20px;
+}
+
+#user{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.button-menu{
+    margin-right: 30px;
+}
+
+button{
+    padding: 8px 22px 8px 22px;
+    border: none;
+    border-radius: 20px;
+    background-color: #22C55E;
+    color: #fff;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/*--------------Menu--------------*/
+
+
+
 
 .side-panel{
-    background-color: green;
+    background-color: #22C55E;
+    display: grid;
+    grid-area: 1/1/6/2;
 }
 
 .main-feed{
-    background-color: blue;
+    background-color: #F0FDF4;
+    display: grid;
+    grid-area: 2/2/6/5;
+
 }
 
 .side-feed{
-    background-color: yellow;
+    background-color: #F0FDF4;
+    display: grid;
+    grid-column: 2/5/6/6;
 }
