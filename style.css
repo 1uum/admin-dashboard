@@ -1,0 +1,30 @@
+html{
+    min-height: 100%;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.container{
+    display: grid;
+}
+
+.header{
+    background-color: red;
+}
+
+.side-panel{
+    background-color: green;
+}
+
+.main-feed{
+    background-color: blue;
+}
+
+.side-feed{
+    background-color: yellow;
+}
