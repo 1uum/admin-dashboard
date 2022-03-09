@@ -162,8 +162,10 @@ h1 .material-icons{
    font-size: 40px;
 }
 
-h1 i:hover{
-   cursor: none;
+
+
+h1 i:hover, h1:hover{
+   cursor:default;
 }
 
 ul{
@@ -196,8 +198,8 @@ li{
 
 li:hover{
    cursor: pointer;
-   text-decoration: underline;
 }
+
 
 .footer {
    display: flex;
@@ -347,3 +349,6 @@ p:hover, h4:hover, h5:hover, h3:hover{
    cursor: default;
 }
 
+a:visited{
+   color: #1a1a1a;
+}
